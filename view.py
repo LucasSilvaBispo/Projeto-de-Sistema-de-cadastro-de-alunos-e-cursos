@@ -1,10 +1,10 @@
-import sqlite3 as lite
+import sqlite3
 
 # criando conexão
 try:
-    con = lite.connect('casdastro_aluno.db')
+    con = sqlite3.connect('casdastro_aluno.db')
     print('Conexão com o banco de dados realizada com sucesso!')
-except lite.Error as e:
+except sqlite3.Error as e:
     print("Erro ao conectar com o banco de dados:", e)
 
 # Tabela de Cursos -------------------------------------------------

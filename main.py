@@ -5,7 +5,7 @@ from tkinter import ttk
 from tkinter import messagebox
 from tkinter import filedialog as fd
 from PIL import ImageTk, Image
-from tkcalendar import Calendar, DateEntry
+from tkcalendar import DateEntry
 import view
 
 
@@ -128,9 +128,9 @@ def alunos():
             e_email.insert(0, tree_lista[2])
             e_tel.insert(0, tree_lista[3])
             c_sexo.insert(0, tree_lista[4])
-            data_nascimento.insert(0, tree_lista[5])
-            e_cpf.insert(0, tree_lista[6])
-            c_turma.insert(0, tree_lista[7])
+            data_nascimento.insert(0, tree_lista[6])
+            e_cpf.insert(0, tree_lista[7])
+            c_turma.insert(0, tree_lista[8])
 
             imagem = tree_lista[5]
             imagem_string = imagem
@@ -764,7 +764,8 @@ app_adicionar.place(x=123, y=30)
 
 
 
-alunos()
+df = alunos()
+df
 
 janela.mainloop()
 
